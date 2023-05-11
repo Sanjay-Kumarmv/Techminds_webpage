@@ -1,0 +1,71 @@
+header #branding{
+    float: left;
+    padding: auto;
+    position: absolute;
+    }
+
+header nav{
+    float: right;
+    margin-top: 10px;
+    padding: auto;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+	border-radius: 10px;
+    background-color: #7991aa;
+    padding: 10px;
+    
+}
+ 
+nav a {
+    /* Add a 3D effect on hover */
+    transition: all 0.2s ease-in-out;
+    transform-style: preserve-3d;
+    color: #f2f2f2;
+  }
+  
+  nav a:hover {
+    /* Rotate the link slightly on hover */
+    transform: rotateX(10deg) rotateY(10deg) translateZ(10px);
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+  }
+  
+  .navbar-nav .nav-link {
+    color: white;
+  }
+#container{
+    margin-top: 100px;
+    padding: 5%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: lightblue;
+    padding: 10px;
+
+    height: 50px;
+    
+    text-align: center;
+    font-family: "open sans";
+    line-height: 48px;
+  }
+  footer #links {
+    float: right;
+    font-size: 30px;
+    margin-right: 20px;
+  }
+  footer #links a {
+    color: #000000;
+  }
+  footer #links i {
+    opacity: 0.3;
+  }
+  footer #links i:hover {
+    opacity: 1;
+  }
+  footer p {
+    float: left;
+    margin-left: 20px;
+  }
