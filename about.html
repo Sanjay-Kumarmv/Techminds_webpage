@@ -1,73 +1,129 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <link rel= "stylesheet" type= "text/css" href= "./assets/style/index.css">
-        <script src="https://kit.fontawesome.com/07ad2788ff.js" crossorigin="anonymous"></script>
-        <title>
-            About - TechMinds
-        </title>
-    </head>
-    <body>
-        <header>
-            <div id="branding">
-                <img src="./assets/images/logo.png" alt="logo" width="100" height="60">
-            </div>
-            <nav class="navbar navbar-expand-lg" >
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
-                  </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home - TechMinds</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/07ad2788ff.js" crossorigin="anonymous"></script>
+    <link rel= "stylesheet" type= "text/css" href= "./assets/style/index.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./assets/images/home/logo.png" alt="TechMinds" width="100" height="60"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
                     <li class="nav-item active">
-                    <a class="nav-link" href="index.html" >Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.html"><i class="fa fa-home" id="icons"></i>Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Services
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="rpa.html">RPA</a>
-                        <a class="dropdown-item" href="areospace.html">Areospace</a>
-                        <a class="dropdown-item" href="me.html">Mechanical Engineering & Robotics</a>
-                    </div>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-suitcase" id="icons"></i>Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="aerospace.html">Aerospace</a>
+                            <a class="dropdown-item" href="mechanical.html">Mechanical</a>
+                            <a class="dropdown-item" href="rpa.html">RPA</a>
+                            <a class="dropdown-item" href="it.html">IT</a>
+                            <a class="dropdown-item" href="datascience.html">Data Science</a>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
+                        <a class="nav-link" href="about.html"><i class="fa fa-file-text-o" id="icons"></i>About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                        <a class="nav-link" href="contactus.html"><i class="fa fa-phone" id="icons"></i>Contact Us</a>
                     </li>
                 </ul>
-            </nav>
-        </header>
-        <br/>
-        <div id="container">
-            <div id="team-info">
-                team-info
-            </div>
-            <div id="data">
-                motives of ours
             </div>
         </div>
-        <footer>
-            <p id="copy">TechMinds &copy; 2023</p>
+    </nav>
 
-            <div id="links">
-                <a href="mailto:xvc@abc.com"><i class="fa fa-envelope"></i></a>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
+    <h1 class="text-center fw-semibold py-3">Who we are ?</h1>
+    <div class="custom-section">
+        
+        <section id="about">
+            <div class="custom-card card align-items-center">
+                <div class="card-body">
+                  <p class="card-text">At Tech Minds, we are a leading Engineering services company dedicated to providing 
+                    cutting-edge solutions for businesses of all sizes. With a team of skilled professionals and a passion 
+                    for excellence, we strive to deliver high-quality services that propel our clients towards success. 
+                    Whether you need Mechanical engineering solutions, Aerospace, Product design and development, 
+                    R&D and also software development, web design, RPA, cloud solutions, or IT consulting, we have the expertise to meet your technology needs.</p>
+                  
+                </div>
             </div>
-        </footer>
-    </body>
+        </section>
+        <section id="moto">
+            <div class="custom-card card align-items-center">
+                <div class="card-body">
+                <h1 class="text-center fw-semibold py-3">Our Strength, Vision & Mission:</h1>
+                  <ul>
+                    <li>
+                        Our Strength is to develop customized solution based on tried and tested fundamental technologies, specially adapted to each individual clients through TECHMINDS. 
+                    </li>
+                    <li>
+                        Our Vision is to fulfill the demands of the Domestic & International industries needs of , Product development, RPA, CFD, IT services through TECHMINDS.
+                    </li>
+                    <li>
+                        Our Mission to be the most reliable global network for customers and suppliers, that delivers value through products and services.
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="footersection" id="footerdiv">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <ul class="navbar-nav">
+                        <li class="accordion">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-suitcase" id="icons"></i>Services
+                              </a>
+                        </li>
+                        <div class="panel" style="background-color: rgb(35, 137, 227); color: white;">
+                            <a class="dropdown-item" href="areospace.html">Aerospace</a>
+                              <a class="dropdown-item" href="mechanical.html">Mechanical</a>
+                              <a class="dropdown-item" href="rpa.html">RPA</a>
+                              <a class="dropdown-item" href="it.html">IT</a>
+                              <a class="dropdown-item" href="datascience.html">Data Science</a>
+                          </div>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.html"><i class="fa fa-phone" id="icons"></i>Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <img src="./assets/images/home/logo.png" alt="logo" width="100" height="60">
+                </div>
+                <div class="col-md-4">
+                    
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-facebook" id="icons"></i>Facebook</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-twitter" id="icons"></i>Twitter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-instagram" id="icons"></i>Instagram</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/expand.js"></script>
+</body>
 </html>
