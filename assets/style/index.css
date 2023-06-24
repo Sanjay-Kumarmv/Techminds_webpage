@@ -6,7 +6,7 @@ body {
 }
 
 .navbar {
-    background-color: #fff9f9;
+    background-color: #ffffff;
     color: rgba(77, 154, 220, 1);
 }
 
@@ -46,7 +46,7 @@ body {
     align-items: center;
     padding-left: 70px;
     text-align: left;
-    color: rgb(249, 249, 249);;
+    color: #ffffff;
 }
 
 .header-section h1 {
@@ -63,17 +63,17 @@ body {
     padding: 70px 0 20px 0;
     background: rgba(77, 154, 220, 1);
     position: relative;
-    color: white;
+    color: #ffffff;
 }
 footer .navbar-nav .nav-link {
     color: rgb(236, 238, 239) !important;
 }
 footer .navbar{
     background-color: rgba(77, 154, 220, 1);
-    color: #fdfdfd;
+    color: #ffffff;
 }
 footer #icons{
-    color:#fdfdfd !important;
+    color:#ffffff !important;
     padding-right: 10px;
 }
 h1,h2{
@@ -116,21 +116,22 @@ h1,h2{
     padding: 20px;
 }
 
-.custom-card .btn:hover{
-  background-color: #fdfdfd;
-  color: rgba(77, 154, 220, 1);
-}
-.mail{
-  
-  align-items: center;
-    justify-content: center;
+.custom-card .btn{
+  color: #ffffff;
+  background-color: rgba(77, 154, 220, 1);
+  border-color:  rgba(77, 154, 220, 1);;
 }
 
-.mail button{
-  background-color: rgba(20, 64, 112, 1);
-  border-radius: 5px;
-  border-color: rgba(217, 217, 217, 1);
-  color:  #ffffff;
+.custom-card .btn:hover{
+  background-color: #ffffff;
+  color: rgba(77, 154, 220, 1);
+}
+
+.center-align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
 }
 
 .expand-collapse{
@@ -172,7 +173,7 @@ p.accordion.active:after {
 
 div.panel {
   padding: 0 18px;
-  background-color: white;
+  background-color: #ffffff;
   max-height: 0;
   overflow: hidden;
   transition: 0.4s ease-in-out;
