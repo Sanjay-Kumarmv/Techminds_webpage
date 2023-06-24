@@ -6,7 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -19,10 +21,10 @@
         </title>
           
     </head>
-    <body>
-        <header>
-            <div id="branding">
-                <img src="./assets/images/logo.png" alt="logo" width="100" height="60">
+    <body> 
+        <header id="home">
+            <div id="TechMinds_logo">
+                <img src="./assets/images/home/logo.png" alt="logo" width="100" height="60">
             </div>
             <nav class="navbar navbar-expand-lg">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,45 +33,84 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                      <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="index.html"><i class="fa fa-home" id="icons"></i>Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Services
+                        <i class="fa fa-suitcase" id="icons"></i>Services
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="rpa.html">RPA</a>
                         <a class="dropdown-item" href="areospace.html">Areospace</a>
-                        <a class="dropdown-item" href="me.html">Mechanical  & Robotics</a>
+                        <a class="dropdown-item" href="me.html">Mechanical</a>
+                        <a class="dropdown-item" href="rpa.html">RPA</a>
+                        <a class="dropdown-item" href="rpa.html">IT</a>
+                        <a class="dropdown-item" href="rpa.html">Data Science</a>
                       </div>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="about.html">About Us</a>
+                      <a class="nav-link" href="about.html"><i class="fa fa-file-text-o" id="icons"></i>About Us</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="contactus.html">Contact Us</a>
+                      <a class="nav-link" href="contactus.html"><i class="fa fa-phone" id="icons"></i>Contact Us</a>
                     </li>
                   </ul>
                 </div>
               </nav>
         </header>
         <br/>
-        <div id="container">
-            <div id="ad">
-
-            </div>
-            <div id="showcase">
-
-            </div>
+        <div class="container" id="home-slider">
+          <div class="item active" style="background-image: url(assets/images/home/hero_img.png)">
+	          <div class="caption">
+	            <h1 class="animated fadeInLeftBig">Welcome to <span>TechMinds</span></h1>
+	            <p class="animated fadeInRightBig">Where technology meets Innovation</p>
+          </div>
         </div>
-        <footer>
-            <p id="copy">TechMinds &copy; 2023</p>
+        </div>
 
-            <div id="links">
-                <a href="mailto:xvc@abc.com"><i class="fa fa-envelope"></i></a>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
+        <div >
+
+        </div>
+
+        <footer id="footer">
+          <div class="row">
+            <div class="col-md-4 footer-navbar">
+              <nav class="navbar navbar-expand-lg">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-suitcase" id="icons"></i>Services
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="areospace.html">Areospace</a>
+                        <a class="dropdown-item" href="me.html">Mechanical</a>
+                        <a class="dropdown-item" href="rpa.html">RPA</a>
+                        <a class="dropdown-item" href="rpa.html">IT</a>
+                        <a class="dropdown-item" href="rpa.html">Data Science</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contactus.html"><i class="fa fa-phone" id="icons"></i>Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
             </div>
+            <div class="col-md-4 footer-logo">
+              <img src="./assets/images/home/logo.png" alt="logo" width="100" height="60">
+            </div>
+            <div class="col-md-4 social-icons">
+              
+                <a class="envelope" id="icons" href="#"><i class="fa fa-envelope"></i></a></li>
+                <a class="twitter" id="icons" href="#"><i class="fa fa-twitter"></i></a></li>
+                <a class="facebook" id="icons" href="#"><i class="fa fa-facebook"></i></a></li>
+                <a class="linkedin" id="icons" href="#"><i class="fa fa-linkedin"></i></a></li>
+              
+            </div>
+          </div>
         </footer>
+        
+        
+        
     </body>
 </html>

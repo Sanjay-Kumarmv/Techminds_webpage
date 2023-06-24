@@ -1,6 +1,7 @@
-header #branding{
+header #TechMinds_logo{
     float: left;
-    padding: auto;
+    padding: 10px;
+    padding-left: 50px;
     position: absolute;
     }
 
@@ -9,10 +10,10 @@ header nav{
     margin-top: 10px;
     padding: auto;
     font-size: 20px;
-    color: white;
+    color: rgba(77, 154, 220, 1);
     position: absolute;
-	border-radius: 10px;
-    background-color: #7991aa;
+	  border-radius: 10px;
+    background-color: #fdfdfd;
     padding: 10px;
     
 }
@@ -21,72 +22,114 @@ nav a {
     /* Add a 3D effect on hover */
     transition: all 0.2s ease-in-out;
     transform-style: preserve-3d;
-    color: #f2f2f2;
+    color: rgba(77, 154, 220, 1);
   }
+
+ nav #icons{
+  padding-right: 5px;
+ } 
   
-  nav a:hover {
-    /* Rotate the link slightly on hover */
-    transform: rotateX(10deg) rotateY(10deg) translateZ(10px);
-    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
-  }
+  
   
   .navbar-nav .nav-link {
+    color: rgba(77, 154, 220, 1);
+  }
+
+  /* #home-slider{
+    background-size: cover;
+    max-width: 100%;
+    max-height: 800px;
+    overflow: hidden;
+    padding: 0%;
+    
+  } */
+
+  #home-slider {
+    position: relative;
+    overflow: hidden;
+    padding: 0%;
+  }
+  
+  #home-slider .item {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Adjust the height as needed */
+    position: relative;
+    
+  }
+
+  #home-slider .caption {
+    position: absolute;
+    top: 50%;
+    
+    z-index: 1;
     color: white;
   }
-#container{
-    margin-top: 100px;
-    padding: 5%;
+  
+  #home-slider .caption h1 {
+    font-size: 40px; /* Adjust the font size as needed */
+    margin-bottom: 20px; /* Adjust the spacing as needed */
+  }
+  
+  #home-slider .caption p {
+    font-size: 20px; /* Adjust the font size as needed */
+  }
+  #footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgba(77, 154, 220, 1);
+    color: white;
+    padding: 20px 0;
+  }
+
+  #footer .row {
+    justify-content: center;
+  }
+
+  #footer .footer-navbar,
+#footer .footer-logo,
+#footer .social-icons {
+  text-align: center;
 }
 
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: lightblue;
-    padding: 10px;
-
-    height: 50px;
+  footer .footer-navbar{
+    padding-left: 90px;
+    align-items: center;
     
-    text-align: center;
-    font-family: "open sans";
-    line-height: 48px;
-  }
-  footer #links {
-    float: right;
-    font-size: 30px;
-    margin-right: 20px;
-  }
-  footer #links a {
-    color: #000000;
-  }
-  footer #links i {
-    opacity: 0.3;
-  }
-  footer #links i:hover {
-    opacity: 1;
-  }
-  footer p {
-    float: left;
-    margin-left: 20px;
   }
 
+  footer .footer-navbar #icons{
+    padding-right: 5px;
+  }
+
+  footer .navbar-nav .nav-link {
+    color: rgb(236, 238, 239);
+  }
+
+  footer .footer-logo{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  footer .social-icons{
+    padding-right: 90px;
+  }
+  footer #icons{
+    color:#fdfdfd;
+    padding-right: 10px;
+  }
 
   @media (max-width: 768px) {
     nav a {
         /* Add a 3D effect on hover */
         transition: all 0.2s ease-in-out;
         transform-style: preserve-3d;
-        color: #f2f2f2;
+        color: rgba(77, 154, 220, 1);
       }
-      
-      nav a:hover {
-        /* Rotate the link slightly on hover */
-        transform: rotateX(10deg) rotateY(10deg) translateZ(10px);
-        text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
-      }
+
       
       .navbar-nav .nav-link {
-        color: white;
+        color: rgba(77, 154, 220, 1);
       }
     /* Hide the navigation links */
     .navbar-nav {
