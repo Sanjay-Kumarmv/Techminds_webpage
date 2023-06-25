@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home - TechMinds</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/07ad2788ff.js" crossorigin="anonymous"></script>
-    <link rel= "stylesheet" type= "text/css" href= "./assets/style/index.css">
+    <link rel="stylesheet" type="text/css" href="./assets/style/index.css">
+    <link rel="stylesheet" href="./assets/style/service.css">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top position-adjustment">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="./assets/images/home/logo.png" alt="TechMinds" width="100" height="60"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#"><img src="./assets/images/home/logo.png" alt="TechMinds" width="100"
+                    height="60"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav position-list">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html"><i class="fa fa-home" id="icons"></i>Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link fs-5" href="index.html"><i class="fa fa-home" id="icons"></i>Home<span
+                                class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-suitcase" id="icons"></i>Services
+                        <a class="nav-link dropdown-toggle fs-5" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-suitcase" id="icons"></i>Data Science
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="areospace.html">Aerospace</a>
@@ -33,53 +41,103 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html"><i class="fa fa-file-text-o" id="icons"></i>About Us</a>
+                        <a class="nav-link fs-5" href="about.html"><i class="fa fa-file-text-o" id="icons"></i>About
+                            Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contactus.html"><i class="fa fa-phone" id="icons"></i>Contact Us</a>
+                        <a class="nav-link fs-5" href="contactus.html"><i class="fa fa-phone" id="icons"></i>Contact
+                            Us</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <section class="container fixxing-background">
+        <div class="background" id="background-ds" ></div>
+        <section class="header-section " style="background-image: url(./assets/images/ds/ds.png);">
+        </section>
+        <section class="header-section para-main">
+            <div class="header-content">
+                <h4 style="font-weight: bold; color: #676767;">Our Service</h4>
+                <h1 style=" color: white">Data Science</h1>
+                <p class="hero-p">
+                    At TechMinds, we specialize in harnessing the power of data to drive business growth and innovation. Our team of skilled data scientists and analysts are passionate about leveraging cutting-edge technologies and advanced analytics techniques to uncover valuable insights and deliver actionable results. With our comprehensive range of data science services, we help businesses make informed decisions, optimize operations, and stay ahead in today's data-driven world                </p>
+            </div>
+        </section>
 
-    
+    </section>
 
-    <footer class="footersection" id="footerdiv">
+
+    <main class="container flex-container">
+        <div class="col-6 card-align" id="card-top">
+            <img src="./assets/images/mech/mech.png" alt="">
+            <h2 class="para-width">Data Analytics and Model building </h2>
+            <p class="para-width">
+                Exploratory Data Analysis (EDA): Showcase your expertise in analyzing and understanding complex datasets to extract valuable insights.
+                Predictive Modeling: Emphasize your proficiency in building accurate predictive models to forecast trends, identify patterns, or make data-driven predictions.
+                Recommendation Systems: Highlight your expertise in building recommendation systems that provide personalized suggestions based on user preferences and behavior        <div class="col-6 card-align">
+            <img src="./assets/images/mech/mech.png" alt="">
+            <h2 class="para-width">Natural Language Processing (NLP)</h2>
+            <p class="para-width">
+                Text Classification and Sentiment Analysis: Showcase your ability to classify and analyze textual data, enabling sentiment analysis, topic modeling, or spam detection.
+                Named Entity Recognition (NER): Highlight your NER capabilities to extract entities like names, organizations, or locations from unstructured text data.
+                Language Generation: Emphasize your expertise in generating human-like text or chatbot responses using techniques like language models or sequence-to-sequence models.        </div>
+        <div class="col-6 card-align">
+            <img src="./assets/images/mech/mech.png" alt="">
+            <h2 class="para-width"> Data Engineering </h2>
+            <p class="para-width">
+                Data Cleaning and Preprocessing: Discuss your skills in cleaning and transforming raw data into a usable format, ensuring data quality and consistency.
+                Data Warehousing and Integration: Showcase your ability to design and implement efficient data storage systems and integrate data from various sources.
+                Big Data Processing: Highlight your expertise in handling and analyzing large-scale datasets using technologies like Apache Hadoop or Apache Spark.        </div>
+        <div class="col-6 card-align">
+            <img src="./assets/images/mech/mech.png" alt="">
+            <h2 class="para-width">Data Science Consulting</h2>
+            <p class="para-width">
+                Project Strategy and Planning: Discuss your ability to provide guidance in formulating data-driven strategies and developing project roadmaps.
+                Model Evaluation and Optimization: Emphasize your proficiency in evaluating existing models, identifying areas for improvement, and optimizing their performance.
+                Training and Workshops: Highlight your capability to provide training sessions and workshops to upskill teams in data science techniques and tools.        </div>
+    </main>
+
+
+    <footer class="footersection footer-position" id="footerdiv">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
                     <ul class="navbar-nav">
                         <li class="accordion">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle footer-align" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fa fa-suitcase" id="icons"></i>Services
-                              </a>
+                            </a>
                         </li>
                         <div class="panel" style="background-color: rgb(35, 137, 227); color: white;">
                             <a class="dropdown-item" href="areospace.html">Aerospace</a>
-                              <a class="dropdown-item" href="mechanical.html">Mechanical</a>
-                              <a class="dropdown-item" href="rpa.html">RPA</a>
-                              <a class="dropdown-item" href="it.html">IT</a>
-                              <a class="dropdown-item" href="datascience.html">Data Science</a>
-                          </div>
+                            <a class="dropdown-item" href="mechanical.html">Mechanical</a>
+                            <a class="dropdown-item" href="rpa.html">RPA</a>
+                            <a class="dropdown-item" href="it.html">IT</a>
+                            <a class="dropdown-item" href="datascience.html">Data Science</a>
+                        </div>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="contactus.html"><i class="fa fa-phone" id="icons"></i>Contact Us</a>
+                            <a class="nav-link footer-align" href="contactus.html"><i class="fa fa-phone"
+                                    id="icons"></i>Contact Us</a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-4">
-                    <img src="./assets/images/home/logo.png" alt="logo" width="100" height="60">
+                <div class="col-md-4 footer-logo">
+                    <img src="./assets/images/home/logo.png" alt="logo" width="160" height="90">
                 </div>
                 <div class="col-md-4">
-                    
+
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fab fa-facebook" id="icons"></i>Facebook</a>
+                            <a class="nav-link footer-social" href="#"><i class="fab fa-facebook"
+                                    id="icons"></i>Facebook</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item footer-social">
                             <a class="nav-link" href="#"><i class="fab fa-twitter" id="icons"></i>Twitter</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item footer-social">
                             <a class="nav-link" href="#"><i class="fab fa-instagram" id="icons"></i>Instagram</a>
                         </li>
                     </ul>
@@ -91,4 +149,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/expand.js"></script>
 </body>
+
 </html>

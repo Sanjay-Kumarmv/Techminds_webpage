@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home - TechMinds</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/07ad2788ff.js" crossorigin="anonymous"></script>
-    <link rel= "stylesheet" type= "text/css" href= "./assets/style/index.css">
+    <link rel="stylesheet" type="text/css" href="./assets/style/index.css">
+    <link rel="stylesheet" href="./assets/style/service.css">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top position-adjustment">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="./assets/images/home/logo.png" alt="TechMinds" width="100" height="60"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#"><img src="./assets/images/home/logo.png" alt="TechMinds" width="100"
+                    height="60"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav position-list">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html"><i class="fa fa-home" id="icons"></i>Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link fs-5" href="index.html"><i class="fa fa-home" id="icons"></i>Home<span
+                                class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-suitcase" id="icons"></i>Services
+                        <a class="nav-link dropdown-toggle fs-5" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-suitcase" id="icons"></i>Aerospace
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="areospace.html">Aerospace</a>
@@ -33,53 +41,147 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html"><i class="fa fa-file-text-o" id="icons"></i>About Us</a>
+                        <a class="nav-link fs-5" href="about.html"><i class="fa fa-file-text-o" id="icons"></i>About
+                            Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contactus.html"><i class="fa fa-phone" id="icons"></i>Contact Us</a>
+                        <a class="nav-link fs-5" href="contactus.html"><i class="fa fa-phone" id="icons"></i>Contact
+                            Us</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <section class="container fixxing-background">
+        <div class="background"></div>
+        <section class="header-section " style="background-image: url(./assets/images/home/hero_img.png);">
+        </section>
+        <section class="header-section para-main">
+            <div class="header-content">
+                <h4 style="font-weight: bold; color: #2a2a2a;">Our Service</h4>
+                <h1 style=" color: white">Aerospace</h1>
+                <p class="hero-p">
+                    Welcome to Tech Minds, your premier destination for cutting-edge aerospace design solutions. With a
+                    passion for innovation and a commitment to excellence, we are dedicated to pushing the boundaries of
+                    aerospace engineering.
+                </p>
+            </div>
+        </section>
 
-    
+    </section>
 
-    <footer class="footersection" id="footerdiv">
+
+    <main class="container flex-container">
+        <div class="col-6 card-align" id="card-top">
+            <img src="./assets/images/mech/mech.png" alt="">
+            <h2>Conceptual Design</h2>
+            <p class="para-width">
+                We specialize in transforming your ideas and requirements into viable aerospace design concepts. Our
+                team utilizes state-of-the-art software tools and advanced simulation techniques to develop innovative
+                and efficient solutions.
+            </p>
+        </div>
+        <div class="col-6 card-align">
+            <img src="./assets/images/mech/mech.png" alt="">
+            <h2>Structural Analysis</h2>
+            <p class="para-width">
+                We conduct thorough structural analyses to ensure the integrity and safety of your aerospace components
+                and systems. Our engineers employ advanced computational methods to assess stress, fatigue, and
+                vibration characteristics, providing you with reliable and optimized designs.
+
+            </p>
+        </div>
+        <div class="col-6 card-align">
+            <img src="./assets/images/mech/mech.png" alt="">
+            <h2> Aerodynamics and Fluid Dynamics</h2>
+            <p class="para-width">
+                 Our expertise in aerodynamics and fluid dynamics enables us to optimize the performance and efficiency
+                of your aerospace vehicles. We employ computational fluid dynamics (CFD) simulations and wind tunnel
+                testing to enhance aerodynamic properties, reducing drag and increasing fuel efficiency.
+
+            </p>
+        </div>
+        <div class="col-6 card-align">
+            <img src="./assets/images/mech/mech.png" alt="">
+            <h2>System Integration</h2>
+            <p class="para-width">
+                 We excel in integrating complex aerospace systems, ensuring seamless functionality and compatibility.
+                Our team possesses in-depth knowledge of avionics, propulsion systems, control systems, and more,
+                allowing us to deliver integrated solutions that meet stringent industry standards.
+
+            </p>
+        </div>
+        <div class="col-6 card-align">
+            <img src="./assets/images/mech/mech.png" alt="">
+            <h2> Prototyping and Testing</h2>
+            <p class="para-width">
+                 We offer comprehensive prototyping services to validate and refine your aerospace designs. Through
+                advanced manufacturing techniques, rapid prototyping, and rigorous testing, we ensure that your products
+                perform optimally before they go into production.
+            </p>
+        </div>
+        <div class="col-6 card-align">
+            <img src="./assets/images/mech/mech.png" alt="">
+            <h2>Manufacturing Support</h2>
+            <p class="para-width">
+                 We provide manufacturing support services, including design for manufacturability (DFM) and production
+                process optimization. By considering manufacturing constraints from the initial design stages, we help
+                streamline the production process, reduce costs, and improve quality.
+
+            </p>
+        </div>
+        <div class="col-6 card-align">
+            <img src="./assets/images/mech/mech.png" alt="">
+            <h2>Regulatory Compliance</h2>
+            <p class="para-width">
+                Our team is well-versed in industry regulations and standards, ensuring that your aerospace designs meet
+                all necessary compliance requirements. We offer guidance and support throughout the certification
+                process, facilitating a smooth transition from design to production.
+            </p>
+        </div>
+
+    </main>
+
+
+    <footer class="footersection footer-position" id="footerdiv">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
                     <ul class="navbar-nav">
                         <li class="accordion">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle footer-align" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fa fa-suitcase" id="icons"></i>Services
-                              </a>
+                            </a>
                         </li>
                         <div class="panel" style="background-color: rgb(35, 137, 227); color: white;">
                             <a class="dropdown-item" href="areospace.html">Aerospace</a>
-                              <a class="dropdown-item" href="mechanical.html">Mechanical</a>
-                              <a class="dropdown-item" href="rpa.html">RPA</a>
-                              <a class="dropdown-item" href="it.html">IT</a>
-                              <a class="dropdown-item" href="datascience.html">Data Science</a>
-                          </div>
+                            <a class="dropdown-item" href="mechanical.html">Mechanical</a>
+                            <a class="dropdown-item" href="rpa.html">RPA</a>
+                            <a class="dropdown-item" href="it.html">IT</a>
+                            <a class="dropdown-item" href="datascience.html">Data Science</a>
+                        </div>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="contactus.html"><i class="fa fa-phone" id="icons"></i>Contact Us</a>
+                            <a class="nav-link footer-align" href="contactus.html"><i class="fa fa-phone"
+                                    id="icons"></i>Contact Us</a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-4">
-                    <img src="./assets/images/home/logo.png" alt="logo" width="100" height="60">
+                <div class="col-md-4 footer-logo">
+                    <img src="./assets/images/home/logo.png" alt="logo" width="160" height="90">
                 </div>
                 <div class="col-md-4">
-                    
+
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fab fa-facebook" id="icons"></i>Facebook</a>
+                            <a class="nav-link footer-social" href="#"><i class="fab fa-facebook"
+                                    id="icons"></i>Facebook</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item footer-social">
                             <a class="nav-link" href="#"><i class="fab fa-twitter" id="icons"></i>Twitter</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item footer-social">
                             <a class="nav-link" href="#"><i class="fab fa-instagram" id="icons"></i>Instagram</a>
                         </li>
                     </ul>
@@ -91,4 +193,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/expand.js"></script>
 </body>
+
 </html>
