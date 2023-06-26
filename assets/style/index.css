@@ -119,14 +119,15 @@ h1,h2{
 }
 
 .custom-card .btn{
-color: #ffffff;
-background-color: rgba(77, 154, 220, 1);
+  background-color: #ffffff;
+color: rgba(77, 154, 220, 1);
+
 border-color:  rgba(77, 154, 220, 1);;
 }
 
 .custom-card .btn:hover{
-background-color: #ffffff;
-color: rgba(77, 154, 220, 1);
+  color: #ffffff;
+  background-color: rgba(77, 154, 220, 1);
 }
 
 
@@ -166,16 +167,16 @@ background-color: rgb(35, 137, 227);
 
 /* Unicode character for "plus" sign (+) */
 p.accordion:after {
-content: '\2795'; 
+content: '\25B6'; 
 font-size: 13px;
-color: rgb(35, 137, 227);
+color: rgb(252, 252, 252);
 float: right;
 margin-left: 5px;
 }
 
 /* Unicode character for "minus" sign (-) */
 p.accordion.active:after {
-content: "\2796"; 
+content: "\25BC"; 
 }
 
 /* Style the element that is used for the panel class */
@@ -255,7 +256,9 @@ margin-left: 150px;
 display: flex;
 justify-content: center;
 }
-
+table td {
+  padding-right: 10px; /* Adjust the spacing as needed */
+}
 footer a{
   color: #ffffff;
 }

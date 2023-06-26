@@ -1,0 +1,288 @@
+
+/* body */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2{
+color:rgba(77, 154, 220, 1)
+}
+/* Nav bar */
+
+.navbar {
+    background-color: #ffffff;
+    color: rgba(77, 154, 220, 1);
+}
+
+.navbar-brand img {
+vertical-align: middle;
+}
+
+.service-whitespace {
+margin-top: 50px;
+}
+.line-space {
+line-height: 1.9;
+}
+.choose-us-height {
+height: 100px
+
+}
+.navbar-toggler-icon {
+background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30"><path stroke="rgba(0, 0, 0, 1)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg>');
+
+color: #ffffff;
+width: 30px;
+height: 30px;
+}
+
+.navbar-nav .nav-link {
+color: rgba(77, 154, 220, 1)!important;
+padding: 0.5rem 1rem;
+transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+color: #007bff;
+}
+
+#icons{
+padding-right: 10px;
+}
+.position-adjustment {
+padding-left: 100px;
+padding-right: 100px;
+}
+.position-list {
+/* background-color: beige; */
+width: 650px;
+display: flex;
+justify-content: space-between;
+}
+
+
+/* header section*/
+
+.header-section {
+background-image: url("hero_img.png");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+height: 100vh;
+width: 100%;
+display: flex;
+align-items: center;
+padding-left: 70px;
+text-align: left;
+color: #ffffff;
+}
+
+.header-section h1 {
+font-size: 40px;
+font-weight: bold;
+}
+
+.header-section p {
+font-size: 20px;
+}
+.position-hero {
+background-color: #007bff;
+padding-left: 120px;
+padding-right: 120px;
+}
+/* custom section*/
+.card {
+margin: 5%;
+flex-direction: row;
+}
+.custom-section {
+padding: 20px;
+min-height: calc(100vh - 200px);
+align-items: center;
+justify-content: center;
+background-color: #ffffff;
+}
+.custom-card {
+max-width: 100%;
+/* margin: auto; */
+border-radius: 10px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+transform-style: preserve-3d;
+perspective: 1000px;
+}
+.custom-card img {
+width: 40%;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+object-fit: cover;
+height: 100%;
+object-position: center;
+transition: transform 0.3s ease;
+padding: 20px 20px 20px 20px;
+}
+@media only screen and (max-width: 768px) {
+    .card {
+        /* margin: 5%; */
+        flex-direction: column;
+        }
+    .custom-card img {
+        width: 60%;
+    
+    }
+    .custom-card .card-body {
+        width: 40%;
+        /* padding: 20px; */
+    }
+        
+
+}
+.custom-card .card-body {
+width: 60%;
+padding: 20px;
+}
+
+.custom-card .btn{
+background-color: #ffffff;
+color: rgba(77, 154, 220, 1);
+
+border-color:  rgba(77, 154, 220, 1);;
+}
+
+.custom-card .btn:hover{
+color: #ffffff;
+background-color: rgba(77, 154, 220, 1);
+}
+.center-align {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 50px;
+}
+/* .position-card {
+margin-left: 90px;
+margin-right: 90px;
+} */
+.card-height {
+/* max-height: 500px; */
+min-height: 300px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.button-size {
+    width: 130px;
+    }
+/* expand and collapse */
+
+.expand-collapse{
+padding: 20px;
+}
+p.accordion {
+background-color: rgba(77, 154, 220, 1);
+color: #ffffff;
+cursor: pointer;
+padding: 18px;
+width: 100%;
+text-align: left !important;
+border: none;
+outline: none;
+transition: 0.4s;
+margin-bottom:10px;
+height: 60px;
+align-items: center;
+}
+/* Add a background color to the accordion if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+p.accordion.active, p.accordion:hover {
+background-color: rgb(35, 137, 227);
+}
+
+/* Unicode character for "plus" sign (+) */
+p.accordion:after {
+content: '\25B6'; 
+font-size: 13px;
+color: rgb(252, 252, 252);
+float: right;
+margin-left: 5px;
+}
+
+/* Unicode character for "minus" sign (-) */
+p.accordion.active:after {
+content: "\25BC"; 
+}
+
+.padding-collapse {
+padding-left: 100px;
+padding-right: 100px;
+}
+/* Style the element that is used for the panel class */
+
+div.panel {
+padding: 0 18px;
+background-color: #ffffff;
+max-height: 0;
+overflow: hidden;
+transition: 0.4s ease-in-out;
+opacity: 0;
+margin-bottom:10px;
+border-radius: 5px;
+transform-style: preserve-3d;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+div.panel.show {
+opacity: 1;
+max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+}
+
+
+/* footer */
+
+.footersection{
+width: 100%;
+min-height: 150px;
+padding: 70px 0 20px 0;
+background: rgba(77, 154, 220, 1);
+position: relative;
+color: #ffffff;
+}
+footer .navbar-nav .nav-link {
+color: rgb(236, 238, 239) !important;
+}
+footer .navbar{
+background-color: rgba(77, 154, 220, 1);
+color: #ffffff;
+}
+footer #icons{
+color:#ffffff !important;
+padding-right: 10px;
+}
+.footer-align{
+text-align: start;
+display: flex;
+justify-content: flex-start;  
+}
+.footer-links{
+    align-items: center;
+    justify-content: center; 
+    display: flex;
+}
+.footer-social {
+/* margin-left: 150px; */
+align-items: center;
+    justify-content: center; 
+    display: flex;
+}
+.footer-logo {
+display: flex;
+justify-content: center;
+}
+table td {
+    padding-right: 10px; /* Adjust the spacing as needed */
+}
+footer a{
+    color: #ffffff;
+}
