@@ -123,22 +123,7 @@ object-position: center;
 transition: transform 0.3s ease;
 padding: 20px 20px 20px 20px;
 }
-@media only screen and (max-width: 768px) {
-    .card {
-        /* margin: 5%; */
-        flex-direction: column;
-        }
-    .custom-card img {
-        width: 100%;
-    
-    }
-    .custom-card .card-body {
-        width: 80%;
-        /* padding: 20px; */
-    }
-        
 
-}
 .custom-card .card-body {
 width: 60%;
 padding: 20px;
@@ -192,8 +177,9 @@ border: none;
 outline: none;
 transition: 0.4s;
 margin-bottom:10px;
-height: 60px;
+height: 80px;
 align-items: center;
+display: flex;
 }
 /* Add a background color to the accordion if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 p.accordion.active, p.accordion:hover {
@@ -207,6 +193,8 @@ font-size: 13px;
 color: rgb(252, 252, 252);
 float: right;
 margin-left: 5px;
+position: absolute;
+right: 120px;
 }
 
 /* Unicode character for "minus" sign (-) */
@@ -286,4 +274,27 @@ table td {
 footer a{
     color: #ffffff;
     text-decoration:none;
+}
+@media only screen and (max-width: 768px) {
+    .card {
+        /* margin: 5%; */
+        flex-direction: column;
+        }
+    .custom-card img {
+        width: 100%;
+    
+    }
+    .custom-card .card-body {
+        width: 80%;
+        /* padding: 20px; */
+    }
+    
+    p.accordion {
+        display: flex;
+    }
+    .position-adjustment {
+        padding-left: 10px;
+        padding-right: 10px;
+        }
+
 }
