@@ -129,11 +129,11 @@ padding: 20px 20px 20px 20px;
         flex-direction: column;
         }
     .custom-card img {
-        width: 60%;
+        width: 100%;
     
     }
     .custom-card .card-body {
-        width: 40%;
+        width: 80%;
         /* padding: 20px; */
     }
         
@@ -285,4 +285,5 @@ table td {
 }
 footer a{
     color: #ffffff;
+    text-decoration:none;
 }
