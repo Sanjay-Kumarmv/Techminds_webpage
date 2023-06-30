@@ -1,60 +1,69 @@
-.footer-position {
-  position: relative;
-  bottom: 0px;
+main {
+  padding: 20px;
+  margin: 10px;
 }
-.hero-p {
-  width: 600px;
-}
-.fixxing-background {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  z-index: 1;
-}
-.background {
-  width: 98%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.336);
-  position: absolute;
-  z-index: 2;
-}
-.para-main {
-  position: absolute;
-  z-index: 3;
-}
-.flex-container {
+.row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-
+  justify-content: center;
+  padding-top: 20px;
 }
-.card-align {
-    width: 500px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+
+.card-top {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-card {
+  width: 450px;
+  height: auto;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 8px;
-  background: #fff;
-  box-shadow: -4px -4px 12px 0px rgba(0, 0, 0, 0.12),
-    0px 4px 12px 0px rgba(0, 0, 0, 0.12);
-}
-.para-width {
-  width: 80%;
   text-align: center;
-  letter-spacing: 1.9px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  margin-bottom: 20px;
 }
 
-#background-small{
-    height: 89%;
+.service-card:hover {
+  transform: translateY(-15px);
 }
-#background-ds{
-    height: 94%;
+
+.img-back {
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
+
 .img-size {
-  width: 480px;
-  padding-right: 7px;
+  width: 100%;
+  height: auto;
+  
 }
 
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.para-width {
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 1000px) {
+  .service-card {
+  width: auto;
+  height: auto;
+  }
+}
