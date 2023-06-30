@@ -50,6 +50,9 @@ main {
 }
 
 
+.service-card:hover{
+ background-color: rgba(200, 229, 255, 0.24)
+}
 h2 {
   font-size: 24px;
   font-weight: bold;

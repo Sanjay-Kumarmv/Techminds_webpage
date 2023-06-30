@@ -103,7 +103,7 @@ margin: 5%;
 flex-direction: row;
 }
 .custom-section {
-padding: 20px;
+
 min-height: calc(100vh - 200px);
 align-items: center;
 justify-content: center;
