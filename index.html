@@ -15,9 +15,56 @@
     <meta name="twitter:domain" content="techmindsengineeringsolutions.com">
     <meta name="twitter:title" content="Techminds Engineering Solutions">
     <title>TechMinds Engineering Solutions - Home</title>
+    <link rel="icon" type="image/png" href="./assets/images/home/logo.png"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/07ad2788ff.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="./assets/style/index1.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <style>
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+}
+body, figure { 
+    margin: 0; background: #ffffff;
+    font-family: Istok Web, sans-serif;
+    font-weight: 100;
+}
+div#captioned-gallery { 
+    width: 100%; overflow: hidden; 
+}
+figure.slider { 
+    position: relative; width: 500%;
+    font-size: 0; animation: 20s slidy infinite; 
+}
+figure.slider figure { 
+    width: 20%; height: auto;
+    display: inline-block;  position: relative; 
+}
+figure.slider img { width: 100%; height: 90vh; object-fit: cover;}
+figure.slider figure figcaption { 
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; width: 100%;
+    font-size: 2rem; 
+}
+figure.slider figure::before {
+    content: "";
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7));
+}
+</style>
 
 </head>
 
@@ -63,20 +110,46 @@
         </div>
     </nav>
 
-        <section class="headline" style="background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)),url(./assets/images/home/hero_img.png); background-size: cover; text-align: center;">
+        <!-- <section class="headline" style="background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)),url(./assets/images/home/hero_img.png); background-size: cover; text-align: center;">
             <h1 style=" color: white">Welcome to TechMinds</h1>
             <h3 style=" color: white">Where technology meets innovation!</h3>
-          </section>
+          </section> -->
+          <div id="captioned-gallery">
+            <figure class="slider">
+                <figure>
+                    <img src="./assets/images/home/hero_img.png" alt>
+                    <figcaption>Welcome to TechMinds<br>Where technology meets innovation!</figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/images/ds/ds.png" alt>
+                    <figcaption>Welcome to TechMinds<br>Where technology meets innovation!</figcaption>
+                </figure>
+               <figure>
+                    <img src="./assets/images/it/it.png" alt>
+                    <figcaption>Welcome to TechMinds<br>Where technology meets innovation!</figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/images/mech/mech.png" alt>
+                    <figcaption>Welcome to TechMinds<br>Where technology meets innovation!</figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/images/rpa/RPA.png" alt>
+                    <figcaption>Welcome to TechMinds<br>Where technology meets innovation!</figcaption>
+                </figure>
+            </figure>
+        </div>
+    
 
-    <h1 class="text-center fw-bold py-3 service-whitespace fs-1 fw-bold">Our Services</h1>
+    
     
     <div class="custom-section">
+        <h1 class="text-center fw-bold py-3 service-whitespace fs-1 fw-bold">Our Services</h1>
         <section id="aerospace" class="section-animate">
             <div class="custom-card card align-items-center position-card">
-                <img src="./assets/images/aerospace/aerospace.png" alt="...">
+                <img data-aos="fade-right" data-aos-duration="5000" src="./assets/images/aerospace/aerospace.png" alt="...">
                 <div class="card-body card-height">
                     <h2 class="text-center card-title">Aerospace</h2>
-                    <p class="card-text line-space">With a team of experienced aerospace
+                    <p class="card-text line-space" data-aos="fade-right" data-aos-duration="5000">With a team of experienced aerospace
                         engineers, we provide comprehensive
                         including aircraft design, structural
                         analysis, aerodynamics, and product
@@ -94,21 +167,21 @@
 
                 <div class="card-body card-height">
                     <h2 class="text-center card-title">Mechanical Engineering</h2>
-                    <p class="card-text line-space">With a focus on precision, reliability, and cost-effectiveness, our
+                    <p data-aos="fade-left" data-aos-duration="5000" class="card-text line-space">With a focus on precision, reliability, and cost-effectiveness, our
                         mechanical engineering services encompass everything from product design and analysis to
                         manufacturing support, offering end-to-end solutions for your engineering needs.</p>
                     <a href="mechanical.html" class="btn btn-primary button-size">Know More <i class="fa fa-arrow-right"
                             aria-hidden="true"></i></a>
                 </div>
-                <img src="./assets/images/mech/mech.png" alt="...">
+                <img data-aos="fade-left" data-aos-duration="5000" src="./assets/images/mech/mech.png" alt="...">
             </div>
         </section>
         <section id="RPA">
             <div class="custom-card card align-items-center position-card">
-                <img src="./assets/images/rpa/RPA.png" alt="...">
+                <img data-aos="fade-right" data-aos-duration="5000"  src="./assets/images/rpa/RPA.png" alt="...">
                 <div class="card-body card-height">
                     <h2 class="text-center card-title">RPA</h2>
-                    <p class="card-text line-space">Our RPA services streamline website content management by automating
+                    <p data-aos="fade-right" data-aos-duration="5000" class="card-text line-space">Our RPA services streamline website content management by automating
                         tasks such as content uploading,
                         formatting, and publishing, saving time and reducing manual errors. With our advanced robotic
                         process automation, we ensure
@@ -124,7 +197,7 @@
 
                 <div class="card-body card-height">
                     <h2 class="text-center card-title">Information Technology</h2>
-                    <p class="card-text line-space">Our information technology services for website
+                    <p data-aos="fade-left" data-aos-duration="5000" data-aos="fade-in" data-aos-duration="5000" class="card-text line-space">Our information technology services for website
                         content encompass a comprehensive range of solutions designed to
                         optimize your online presence. From web development and design to
                         content management systems and search engine optimization, we provide tailored
@@ -133,15 +206,15 @@
                     <a href="it.html" class="btn btn-primary button-size">Know More <i class="fa fa-arrow-right"
                             aria-hidden="true"></i></a>
                 </div>
-                <img src="./assets/images/it/it.png" alt="...">
+                <img data-aos="fade-left" data-aos-duration="5000" src="./assets/images/it/it.png" alt="...">
             </div>
         </section>
         <section id="DS">
             <div class="custom-card card align-items-center position-card">
-                <img src="./assets/images/ds/ds.png" alt="...">
+                <img data-aos="fade-right" data-aos-duration="5000" src="./assets/images/ds/ds.png" alt="...">
                 <div class="card-body card-height">
                     <h2 class="text-center card-title">Data Science</h2>
-                    <p class="card-text line-space">At TechMinds, we specialize in
+                    <p data-aos="fade-right" data-aos-duration="10000" class="card-text line-space">At TechMinds, we specialize in
                         harnessing the power of data to drive business growth and innovation.
                         Our team of skilled data scientists and analysts are passionate about
                         leveraging cutting-edge technologies and advanced analytics techniques
@@ -158,21 +231,21 @@
 
     <h1 class="text-center fw-bold py-3">Why Choose Us</h1>
     <div class="expand-collapse padding-collapse">
-        <p class="accordion">Expertise and experience</p>
+        <p data-aos="fade-left" data-aos-duration="5000" class="accordion">Expertise and experience</p>
         <div class="panel">With years of experience in the industry,
             we have a deep understanding of technology trends and best practices.
             Our skilled professionals bring a wealth of knowledge to every project,
             ensuring exceptional results.</div>
 
         <br />
-        <p class="accordion">Customized solutions</p>
+        <p data-aos="fade-right" data-aos-duration="5000" class="accordion">Customized solutions</p>
         <div class="panel"> We believe in delivering solutions that align with your unique business
             needs. Our team collabrates closly with you to understand your goals and challenges, providing
             personalized recommendations and tailored solutions
         </div>
         <br />
 
-        <p class="accordion">Quality and reliablity</p>
+        <p data-aos="fade-left" data-aos-duration="5000" class="accordion">Quality and reliablity</p>
         <div class="panel">
             We are committed to delivering high-quality
             services that exceed expectations. Our rigorous quality
@@ -182,7 +255,7 @@
         </div>
         <br />
 
-        <p class="accordion">Client satisfaction</p>
+        <p data-aos="fade-right" data-aos-duration="5000" class="accordion">Client satisfaction</p>
         <div class="panel">
             Our clients are at the heart of everything we do.
             We prioritze clear communication, prompt support, and a client-centric approach to
@@ -194,10 +267,10 @@
     <footer class="footersection" id="footerdiv">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 footer-links">
-                    <table>
+                <div  class="col-md-4 footer-links">
+                    <table >
                         <tr>
-                            <td><a href="aerospace.html">Aerospace</a></td>
+                            <td><a  href="aerospace.html">Aerospace</a></td>
                             <td><a href="mechanical.html">Mechanical</a></td>
                         </tr>
                         <tr>
@@ -235,6 +308,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/expand.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
